@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="public/javascript/script.js" defer></script>
+    <link href="public/style/style.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>simple weather app</h2>
+    <div class="search">
+      <input type="text" id="wea" />
+      <button id="data">quel temps fait-il ?</button>
+    </div>
+    <div id="app">
+      <div v-for="object of arr">
+        <p class="title">{{ object.day }}</p>
+        <p>{{ object.high }}°C max</p>
+        <p>{{object.low}}°C min</p>
+      </div>
+    </div>
+    <footer>
+      <p>fait par wasaba 2020-2021</p>
+    </footer>
+  </body>
+</html>
